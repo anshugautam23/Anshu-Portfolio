@@ -288,10 +288,12 @@ img {
   fill: var(--first-color);
   /* fill: hsl(69, 69%, 61%); */
 }
+/* Update for home__blob-img to show full rectangle photo */
 .home__blob-img {
-  width: 180%;
-  height: 145%;
-  padding-left: 30px;
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  object-fit: cover;
 }
 .home__data {
   grid-column: 1/3;
@@ -1162,4 +1164,16 @@ img {
   .button--white {
     bottom: -4.5rem;
   }
+}
+
+/* Rectangle profile photo for home section */
+.home__img-rect {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  background: #fff;
 }
